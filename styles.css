@@ -288,6 +288,16 @@ footer p {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.footer-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header h1 {

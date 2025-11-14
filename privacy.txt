@@ -1,0 +1,41 @@
+PRIVACY POLICY FOR MAGIC GPX EDITOR
+
+Last Updated: November 14, 2024
+
+OVERVIEW
+Magic GPX Editor is committed to protecting your privacy. This application processes all data locally on your device.
+
+DATA COLLECTION AND STORAGE
+We do NOT collect, record, or store any of your personal information or GPX file data.
+
+All editing and processing of GPX files occurs entirely on your local device. Your files remain private and under your control.
+
+THIRD-PARTY SERVICES
+When you choose to use the "Fetch Elevation Data" feature, Magic GPX Editor sends latitude and longitude coordinates to OpenTopoData (https://www.opentopodata.org/) to retrieve elevation information.
+
+This service:
+- Receives only the geographic coordinates (latitude/longitude) of selected points
+- Does NOT receive any other data from your GPX files
+- Does NOT receive any personally identifiable information
+- Is used only when you explicitly request elevation data
+
+For more information about OpenTopoData's data handling practices, please visit: https://www.opentopodata.org/
+
+NO ANALYTICS OR TRACKING
+Magic GPX Editor does not use any analytics services, tracking pixels, or telemetry. We have no way of knowing how you use the application.
+
+NO ACCOUNT REQUIRED
+Magic GPX Editor does not require you to create an account or provide any personal information to use the application.
+
+DATA SECURITY
+All data remains on your local device. When you save a GPX file, it is saved directly to your chosen location on your computer.
+
+CHANGES TO THIS PRIVACY POLICY
+We may update this privacy policy from time to time. Any changes will be posted on this page.
+
+CONTACT
+If you have questions about this privacy policy, please contact:
+jamespaulmoriarty@proton.me
+
+YOUR RIGHTS
+Since we don't collect or store any data about you, there is no data to access, modify, or delete. All your data remains on your device under your complete control.
