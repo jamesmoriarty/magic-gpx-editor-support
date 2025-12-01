@@ -74,6 +74,21 @@
                     <h3>POI Search</h3>
                     <p>Search for points of interest and add them as waypoints.</p>
                 </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Track Optimization</h3>
+                    <p>Simplify tracks to approximately 200 points and normalize timestamps based on 4 km/h walking speed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Merge GPX Files</h3>
+                    <p>Combine multiple GPX files into one with full undo support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Localized Units</h3>
+                    <p>Automatic metric or imperial distance display based on your system settings.</p>
+                </div>
             </div>
         </section>
 
@@ -108,12 +123,20 @@
             <h2>Keyboard Shortcuts</h2>
             <div class="shortcuts-grid">
                 <div class="shortcut">
+                    <kbd>⌘ I</kbd>
+                    <span>Import GPX</span>
+                </div>
+                <div class="shortcut">
                     <kbd>⌘ S</kbd>
                     <span>Save</span>
                 </div>
                 <div class="shortcut">
                     <kbd>⌘ Z</kbd>
                     <span>Undo</span>
+                </div>
+                <div class="shortcut">
+                    <kbd>⌘ ⇧ Z</kbd>
+                    <span>Redo</span>
                 </div>
                 <div class="shortcut">
                     <kbd>ESC</kbd>
@@ -147,6 +170,18 @@
             <div class="faq-item">
                 <h3>What map styles are available?</h3>
                 <p>Magic GPX Editor offers four map styles: Standard (Apple Maps), Hybrid (satellite with labels), OpenStreetMap (free community-maintained maps), and OpenTopoMap (topographic maps with contour lines and elevation shading).</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I simplify a complex track?</h3>
+                <p>Select a track in the info panel and click the simplify button (waveform icon). The track will be reduced to approximately 200 points while preserving its overall shape using the Douglas-Peucker algorithm.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I normalize track times?</h3>
+                <p>Yes! Select a track and click the time normalization button (clock icon). This recalculates timestamps for all track points based on a 4 km/h walking speed, useful for simulating activity data.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Will my files save correctly?</h3>
+                <p>Yes! The app uses security-scoped bookmarks to maintain persistent access to your files. When you import or save a file, the app securely remembers the location so future saves work seamlessly.</p>
             </div>
         </section>
 
