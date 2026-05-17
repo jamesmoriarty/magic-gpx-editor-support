@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Magic GPX Editor - A powerful GPX file editor for macOS. Edit tracks, waypoints, and routes with ease.">
-    <title>Magic GPX Editor - Support</title>
+    <meta name="description" content="Magic GPX Editor — a fast, native GPX editor for macOS. Edit tracks, waypoints, and routes with precision.">
+    <meta name="theme-color" content="#111114">
+    <title>Magic GPX Editor — Support</title>
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google tag (gtag.js) -->
@@ -13,194 +14,340 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-NHMWRM0LY9');
     </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>✨ Magic GPX Editor</h1>
-            <p class="tagline">A powerful GPX file editor for macOS</p>
-        </div>
-    </header>
 
-    <main class="container">
-        <section class="hero">
-            <h2>Welcome to Magic GPX Editor</h2>
-            <p>Edit your GPX tracks, waypoints, and routes with an intuitive interface designed for macOS.</p>
-            <div style="margin-top: 2rem;">
-                <a href="https://apps.apple.com/nz/app/magic-gpx-editor/id6755287800?mt=12" class="button" style="display: inline-block; padding: 0.75rem 1.5rem; background: #007AFF; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+<!-- ─────────── Top bar (mirrors the app chrome) ─────────── -->
+<div class="topbar">
+    <div class="topbar-inner">
+        <div class="brand-mark"></div>
+        <span class="brand-name">Magic GPX Editor</span>
+        <span class="brand-file">.gpx</span>
+        <span class="topbar-divider"></span>
+        <div class="topbar-stat">
+            <span class="k">Platform</span>
+            <span class="v">macOS 14+</span>
+        </div>
+        <span class="topbar-divider"></span>
+        <div class="topbar-stat">
+            <span class="k">Version</span>
+            <span class="v accent">1.4</span>
+        </div>
+        <div class="topbar-spacer"></div>
+        <a class="topbar-link" href="#features">Features</a>
+        <a class="topbar-link" href="#faq">FAQ</a>
+        <a class="topbar-link" href="#support">Support</a>
+        <a class="topbar-cta" href="https://apps.apple.com/nz/app/magic-gpx-editor/id6755287800?mt=12">Download</a>
+    </div>
+</div>
+
+<!-- ─────────── Hero ─────────── -->
+<section class="hero">
+    <div class="container hero-inner">
+        <div>
+            <span class="eyebrow"><span class="dot"></span>Native macOS · Universal</span>
+            <h1>Edit GPX tracks <br>with <span class="accent">precision</span>.</h1>
+            <p class="lede">
+                A fast, focused editor for GPS tracks, waypoints, and routes — built natively for macOS.
+                Drop in a file, clean up the noise, and ship a tidy <span style="font-family:var(--mono);color:var(--text)">.gpx</span> in seconds.
+            </p>
+            <div class="hero-actions">
+                <a class="btn primary" href="https://apps.apple.com/nz/app/magic-gpx-editor/id6755287800?mt=12">
                     Download on the Mac App Store
+                    <span class="arrow">→</span>
                 </a>
+                <a class="btn ghost" href="#features">See what's inside</a>
             </div>
-        </section>
-
-        <section class="screenshot">
-            <h2>Preview</h2>
-            <img src="screenshot.png" alt="Magic GPX Editor Screenshot" style="width: 100%; max-width: 1200px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin: 0 auto; display: block;">
-        </section>
-
-        <section class="features">
-            <h2>Features</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🗺️</div>
-                    <h3>Interactive Map</h3>
-                    <p>View and edit your GPX data on an interactive map with multiple map styles including Standard, Hybrid, OpenStreetMap, and OpenTopoMap with contour lines.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📍</div>
-                    <h3>Waypoint Management</h3>
-                    <p>Add, edit, and organize waypoints with automatic clustering for better readability.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛤️</div>
-                    <h3>Track Editing</h3>
-                    <p>Edit track points, segments, and routes with powerful selection and editing tools.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Elevation Profiles</h3>
-                    <p>Visualize elevation data and fetch elevation information from online services.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">↩️</div>
-                    <h3>Undo/Redo</h3>
-                    <p>Full undo/redo support for all editing operations.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
-                    <h3>POI Search</h3>
-                    <p>Search for points of interest and add them as waypoints.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Track Optimization</h3>
-                    <p>Simplify tracks to approximately 200 points and normalize timestamps based on 4 km/h walking speed.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔗</div>
-                    <h3>Merge GPX Files</h3>
-                    <p>Combine multiple GPX files into one with full undo support.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Localized Units</h3>
-                    <p>Automatic metric or imperial distance display based on your system settings.</p>
-                </div>
+            <div class="hero-meta">
+                <span>100% local processing</span>
+                <span>No account required</span>
+                <span>No tracking</span>
             </div>
-        </section>
-
-        <section class="how-to">
-            <h2>How to Use</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Open a GPX File</h3>
-                        <p>Use File → Open or drag and drop a GPX file into the application.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Edit Your Data</h3>
-                        <p>Click on the map to add points, select and edit waypoints, or modify track segments.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Save Your Changes</h3>
-                        <p>Use File → Save or ⌘S to save your modifications.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="keyboard-shortcuts">
-            <h2>Keyboard Shortcuts</h2>
-            <div class="shortcuts-grid">
-                <div class="shortcut">
-                    <kbd>⌘ I</kbd>
-                    <span>Import GPX</span>
-                </div>
-                <div class="shortcut">
-                    <kbd>⌘ S</kbd>
-                    <span>Save</span>
-                </div>
-                <div class="shortcut">
-                    <kbd>⌘ Z</kbd>
-                    <span>Undo</span>
-                </div>
-                <div class="shortcut">
-                    <kbd>⌘ ⇧ Z</kbd>
-                    <span>Redo</span>
-                </div>
-                <div class="shortcut">
-                    <kbd>ESC</kbd>
-                    <span>Exit current mode</span>
-                </div>
-                <div class="shortcut">
-                    <kbd>Delete</kbd>
-                    <span>Delete selected items</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>What is a GPX file?</h3>
-                <p>GPX (GPS Exchange Format) is an XML-based file format for storing GPS data including waypoints, tracks, and routes. It's widely supported by GPS devices and mapping applications.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I import routes?</h3>
-                <p>Yes! Magic GPX Editor automatically converts routes to tracks when importing GPX files, making them easier to edit.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How do I add waypoints?</h3>
-                <p>Click the waypoint mode button (scope icon) in the Waypoints section, then click on the map where you want to add a waypoint. You can also use the plus button to add waypoints programmatically.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I fetch elevation data?</h3>
-                <p>Yes! Select track points and click the mountain icon to fetch elevation data from the OpenTopoData API.</p>
-            </div>
-            <div class="faq-item">
-                <h3>What map styles are available?</h3>
-                <p>Magic GPX Editor offers four map styles: Standard (Apple Maps), Hybrid (satellite with labels), OpenStreetMap (free community-maintained maps), and OpenTopoMap (topographic maps with contour lines and elevation shading).</p>
-            </div>
-            <div class="faq-item">
-                <h3>How do I simplify a complex track?</h3>
-                <p>Select a track in the info panel and click the simplify button (waveform icon). The track will be reduced to approximately 200 points while preserving its overall shape using the Douglas-Peucker algorithm.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I normalize track times?</h3>
-                <p>Yes! Select a track and click the time normalization button (clock icon). This recalculates timestamps for all track points based on a 4 km/h walking speed, useful for simulating activity data.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Will my files save correctly?</h3>
-                <p>Yes! The app uses security-scoped bookmarks to maintain persistent access to your files. When you import or save a file, the app securely remembers the location so future saves work seamlessly.</p>
-            </div>
-        </section>
-
-        <section class="support">
-            <h2>Support</h2>
-            <p>Need help? Found a bug? Have a feature request?</p>
-            <div class="support-links">
-                <a href="https://github.com/yourusername/magic-gpx-editor/issues" class="button">Report an Issue</a>
-                <a href="https://github.com/yourusername/magic-gpx-editor" class="button secondary">View on GitHub</a>
-                <a href="mailto:jamespaulmoriarty@proton.me?subject=Magic%20GPX%20Editor%20Support" class="button secondary">Email Support</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Magic GPX Editor. Built with ❤️ for macOS.</p>
-            <p><a href="privacy.txt" class="footer-link">Privacy Policy</a></p>
         </div>
-    </footer>
+
+        <!-- Mini "track properties" panel — pulled straight from the app vocabulary -->
+        <div class="hero-card" aria-hidden="true">
+            <div class="hero-card-head">
+                <div class="lights"><span></span><span></span><span></span></div>
+                <span class="title">Tarawera Trail.gpx</span>
+            </div>
+            <div class="hero-card-body">
+                <div class="panel-label">Track Properties</div>
+                <div class="row">
+                    <span class="k">Name</span>
+                    <span class="v">Tarawera Trail</span>
+                </div>
+                <div class="row">
+                    <span class="k">Type</span>
+                    <span class="pills">
+                        <span class="pill on">Hiking</span>
+                        <span class="pill">Running</span>
+                        <span class="pill">Cycling</span>
+                    </span>
+                </div>
+                <div class="row">
+                    <span class="k">Color</span>
+                    <span class="swatches">
+                        <span class="on" style="background: var(--swatch-orange); color: var(--swatch-orange)"></span>
+                        <span style="background: var(--swatch-blue)"></span>
+                        <span style="background: var(--swatch-green)"></span>
+                        <span style="background: var(--swatch-magenta)"></span>
+                        <span style="background: var(--swatch-yellow)"></span>
+                    </span>
+                </div>
+                <div class="row">
+                    <span class="k">Distance</span>
+                    <span class="v">13.8 km</span>
+                </div>
+                <div class="row">
+                    <span class="k">Gain</span>
+                    <span class="v" style="color: var(--accent)">+637 m</span>
+                </div>
+                <div class="row">
+                    <span class="k">Points</span>
+                    <span class="v">923</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─────────── Screenshot ─────────── -->
+<section class="showcase">
+    <div class="container">
+        <div class="window">
+            <div class="window-bar">
+                <div class="lights"><span></span><span></span><span></span></div>
+                <span class="title">Magic GPX Editor — Tarawera Trail.gpx</span>
+            </div>
+            <img src="screenshot.png" alt="Magic GPX Editor showing the Tarawera Trail with map, elevation profile, and track property panels.">
+        </div>
+    </div>
+</section>
+
+<!-- ─────────── Features ─────────── -->
+<section class="section" id="features">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <div class="label">/ Features</div>
+                <h2>Everything you need for tidy GPX.</h2>
+            </div>
+            <p>Built around a familiar map-and-panel workflow. Edit tracks, manage waypoints, and clean up data without leaving the file.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3V6z"/><path d="M9 3v15M15 6v15"/></svg></div>
+                <h3>Multiple map styles</h3>
+                <p>Switch between Standard, Hybrid, OpenStreetMap, and OpenTopoMap with contour lines — pick the view that fits the terrain.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+                <h3>Waypoints</h3>
+                <p>Drop, label, and reorganize waypoints. Automatic clustering keeps the map readable even at low zoom.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18c4-12 14-2 18-12"/><circle cx="3" cy="18" r="1.6" fill="currentColor"/><circle cx="21" cy="6" r="1.6" fill="currentColor"/></svg></div>
+                <h3>Track editing</h3>
+                <p>Select, move, and delete track points. Split segments at the cursor or merge them with a click.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20l5-9 4 6 3-4 6 7H3z"/></svg></div>
+                <h3>Elevation profiles</h3>
+                <p>Visualize gain, max, and pace. Fetch fresh elevation data from OpenTopoData for any track in one click.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 3l-9 11h6l-1 7 9-11h-6l1-7z" fill="currentColor" stroke="none"/></svg></div>
+                <h3>Simplify &amp; normalize</h3>
+                <p>Reduce 900+ noisy points to a clean ~200 while preserving shape. Recompute timestamps at a 4 km/h walking pace.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16M12 4v16"/></svg></div>
+                <h3>Merge GPX files</h3>
+                <p>Combine multiple files into one with full undo. Routes are converted to tracks on import for easier editing.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/></svg></div>
+                <h3>POI search</h3>
+                <p>Search places by name and drop them onto your track as waypoints, with the search bar built into the map.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 14L4 9l5-5"/><path d="M20 20v-7a4 4 0 00-4-4H4"/></svg></div>
+                <h3>Full undo / redo</h3>
+                <p>Every edit is reversible. Step backward and forward through a complete history of your changes.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></div>
+                <h3>Localized units</h3>
+                <p>Distances render in metric or imperial automatically, following your macOS system settings.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─────────── How to use ─────────── -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <div class="label">/ Getting started</div>
+                <h2>Three steps from messy to clean.</h2>
+            </div>
+            <p>The workflow most users land on after a few sessions.</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">STEP 01</div>
+                <h3>Open a GPX</h3>
+                <p>Drag a <span style="font-family:var(--mono);color:var(--text)">.gpx</span> file into the window, or use <kbd>⌘O</kbd>. Routes are auto-converted to tracks so they're ready to edit.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">STEP 02</div>
+                <h3>Edit on the map</h3>
+                <p>Click to add points, drag to move, or use the toolbar to split, merge, and clean. The right panel exposes track properties live.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">STEP 03</div>
+                <h3>Save in place</h3>
+                <p>Press <kbd>⌘S</kbd> and the file writes back to its original location — security-scoped bookmarks keep access seamless.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─────────── Shortcuts ─────────── -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <div class="label">/ Keyboard</div>
+                <h2>Shortcuts.</h2>
+            </div>
+            <p>Worth learning the first six.</p>
+        </div>
+        <div class="shortcuts">
+            <div class="shortcut-row">
+                <div class="keys"><kbd>⌘</kbd><kbd>O</kbd></div>
+                <div class="label">Open a GPX file</div>
+            </div>
+            <div class="shortcut-row">
+                <div class="keys"><kbd>⌘</kbd><kbd>S</kbd></div>
+                <div class="label">Save changes</div>
+            </div>
+            <div class="shortcut-row">
+                <div class="keys"><kbd>⌘</kbd><kbd>Z</kbd></div>
+                <div class="label">Undo</div>
+            </div>
+            <div class="shortcut-row">
+                <div class="keys"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>Z</kbd></div>
+                <div class="label">Redo</div>
+            </div>
+            <div class="shortcut-row">
+                <div class="keys"><kbd>esc</kbd></div>
+                <div class="label">Exit the current editing mode</div>
+            </div>
+            <div class="shortcut-row">
+                <div class="keys"><kbd>⌫</kbd></div>
+                <div class="label">Delete selected points or waypoints</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─────────── FAQ ─────────── -->
+<section class="section" id="faq">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <div class="label">/ FAQ</div>
+                <h2>Common questions.</h2>
+            </div>
+            <p>If you don't see your question, get in touch below.</p>
+        </div>
+        <div class="faq">
+            <details open>
+                <summary>What is a GPX file?<span class="chev">›</span></summary>
+                <div class="answer">GPX (GPS Exchange Format) is an XML-based file for storing waypoints, tracks, and routes. It's the standard interchange format supported by virtually every GPS device, mapping app, and outdoor-data service.</div>
+            </details>
+            <details>
+                <summary>Can I import routes?<span class="chev">›</span></summary>
+                <div class="answer">Yes. Magic GPX Editor automatically converts routes into tracks on import so they behave consistently and are easier to edit.</div>
+            </details>
+            <details>
+                <summary>How do I add waypoints?<span class="chev">›</span></summary>
+                <div class="answer">Toggle the waypoint tool in the Waypoints panel, then click anywhere on the map to drop a point. You can also use the plus button to add waypoints by coordinate.</div>
+            </details>
+            <details>
+                <summary>Where does elevation data come from?<span class="chev">›</span></summary>
+                <div class="answer">When you ask for fresh elevation, the app sends only latitude/longitude pairs to OpenTopoData. Nothing else from your file leaves your machine.</div>
+            </details>
+            <details>
+                <summary>What map styles are available?<span class="chev">›</span></summary>
+                <div class="answer">Standard (Apple Maps), Hybrid (satellite with labels), OpenStreetMap, and OpenTopoMap — the topographic style with contour lines and elevation shading shown in the screenshot.</div>
+            </details>
+            <details>
+                <summary>How does track simplification work?<span class="chev">›</span></summary>
+                <div class="answer">Magic GPX Editor uses the Douglas–Peucker algorithm to reduce track point count to ~200 while preserving the overall shape. Use it to tidy up noisy GPS recordings before sharing.</div>
+            </details>
+            <details>
+                <summary>Can I normalize timestamps?<span class="chev">›</span></summary>
+                <div class="answer">Yes. Select a track and run Normalize Timestamps — every point is recomputed at a 4 km/h walking pace from the track's start time, useful for simulating activity data.</div>
+            </details>
+            <details>
+                <summary>Will my files save correctly?<span class="chev">›</span></summary>
+                <div class="answer">Yes. The app uses macOS security-scoped bookmarks to remember file locations across sessions, so a saved file always writes back to where it came from.</div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ─────────── Support ─────────── -->
+<section class="section" id="support">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <div class="label">/ Support</div>
+                <h2>Get in touch.</h2>
+            </div>
+            <p>Bug, feature idea, or just a hello — all are welcome.</p>
+        </div>
+        <div class="support-grid">
+            <a class="support-card" href="mailto:jamespaulmoriarty@proton.me?subject=Magic%20GPX%20Editor%20Support">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+                <h3>Email the developer</h3>
+                <p>Direct line for support questions and feedback. Replies usually within a day or two.</p>
+                <span class="arrow">jamespaulmoriarty@proton.me →</span>
+            </a>
+            <a class="support-card" href="https://apps.apple.com/nz/app/magic-gpx-editor/id6755287800?mt=12">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 3a4 4 0 00-4 4M8 21a4 4 0 014-4 4 4 0 014 4M5 11l7-7 7 7M12 4v13"/></svg></div>
+                <h3>Mac App Store</h3>
+                <p>Leaving a review helps tremendously. It's also the right place to flag a billing or download issue.</p>
+                <span class="arrow">Open in the App Store →</span>
+            </a>
+            <a class="support-card" href="privacy.txt">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7l8-4z"/></svg></div>
+                <h3>Privacy</h3>
+                <p>No analytics, no tracking, no account. Everything happens on your device. Read the full policy.</p>
+                <span class="arrow">View privacy policy →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ─────────── Footer ─────────── -->
+<footer>
+    <div class="container footer-inner">
+        <div>© 2026 Magic GPX Editor — built for macOS.</div>
+        <div class="footer-links">
+            <a href="privacy.txt">Privacy</a>
+            <a href="mailto:jamespaulmoriarty@proton.me">Contact</a>
+            <a href="https://apps.apple.com/nz/app/magic-gpx-editor/id6755287800?mt=12">App Store</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
