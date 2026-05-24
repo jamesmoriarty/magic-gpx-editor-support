@@ -22,7 +22,7 @@
 <!-- ─────────── Top bar (mirrors the app chrome) ─────────── -->
 <div class="topbar">
     <div class="topbar-inner">
-        <div class="brand-mark"></div>
+        <img class="brand-mark" src="icon.png" alt="Magic GPX Editor icon">
         <span class="brand-name">Magic GPX Editor</span>
         <span class="brand-file">.gpx</span>
         <span class="topbar-divider"></span>
@@ -33,7 +33,7 @@
         <span class="topbar-divider"></span>
         <div class="topbar-stat">
             <span class="k">Version</span>
-            <span class="v accent">1.4</span>
+            <span class="v accent">2.05</span>
         </div>
         <div class="topbar-spacer"></div>
         <a class="topbar-link" href="#features">Features</a>
@@ -48,9 +48,9 @@
     <div class="container hero-inner">
         <div>
             <span class="eyebrow"><span class="dot"></span>Native macOS · Universal</span>
-            <h1>Edit GPX tracks <br>with <span class="accent">precision</span>.</h1>
+            <h1>View, edit, and explore<br>your GPX files with <span class="accent">precision</span>.</h1>
             <p class="lede">
-                A fast, focused editor for GPS tracks, waypoints, and routes — built natively for macOS.
+                A full-featured map editor built for precision and ease of use.
                 Drop in a file, clean up the noise, and ship a tidy <span style="font-family:var(--mono);color:var(--text)">.gpx</span> in seconds.
             </p>
             <div class="hero-actions">
@@ -122,7 +122,7 @@
                 <div class="lights"><span></span><span></span><span></span></div>
                 <span class="title">Magic GPX Editor — Tarawera Trail.gpx</span>
             </div>
-            <img src="screenshot.png" alt="Magic GPX Editor showing the Tarawera Trail with map, elevation profile, and track property panels.">
+            <img src="screenshot.png" alt="Magic GPX Editor showing the Tarawera Trail on a topographic map with elevation profile and inspector panel.">
         </div>
     </div>
 </section>
@@ -162,12 +162,27 @@
             <div class="feature">
                 <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 3l-9 11h6l-1 7 9-11h-6l1-7z" fill="currentColor" stroke="none"/></svg></div>
                 <h3>Simplify &amp; normalize</h3>
-                <p>Reduce 900+ noisy points to a clean ~200 while preserving shape. Recompute timestamps at a 4 km/h walking pace.</p>
+                <p>Reduce noisy points to a configurable target while preserving shape. Recompute timestamps at a 4 km/h walking pace.</p>
             </div>
             <div class="feature">
                 <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16M12 4v16"/></svg></div>
                 <h3>Merge GPX files</h3>
                 <p>Combine multiple files into one with full undo. Routes are converted to tracks on import for easier editing.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></div>
+                <h3>Apple Intelligence</h3>
+                <p>Get AI-assisted suggestions for route development, powered by Apple Intelligence built into macOS.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M9 6h6M9 18h6M12 14v2"/></svg></div>
+                <h3>Garmin sync <span style="font-size:10px;opacity:0.6;">Experimental</span></h3>
+                <p>Sync tracks and waypoints directly to a connected Garmin device. Tracks write as FIT course files; waypoints drop into the device's import folder.</p>
+            </div>
+            <div class="feature">
+                <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                <h3>MCP server <span style="font-size:10px;opacity:0.6;">Experimental</span></h3>
+                <p>Run a local Model Context Protocol server and connect Claude Code or Claude Desktop directly to your open document — edit tracks and generate routes through natural language.</p>
             </div>
             <div class="feature">
                 <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/></svg></div>
