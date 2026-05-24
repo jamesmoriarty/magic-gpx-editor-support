@@ -1,95 +1,34 @@
-# Magic GPX Editor - Support Website
+# Magic GPX Editor — Support Website
 
-This folder contains the support website for Magic GPX Editor, designed to be hosted on GitHub Pages.
+This folder contains the support website hosted on GitHub Pages at [jamesmoriarty.github.io/gpx-editor](https://jamesmoriarty.github.io/gpx-editor/).
 
-## 🚀 Deploying to GitHub Pages
+## Reporting a bug or requesting a feature
 
-### Method 1: Using the GitHub Web Interface
+Please [open a GitHub issue](https://github.com/jamesmoriarty/gpx-editor/issues/new) with:
 
-1. Push this repository to GitHub
-2. Go to your repository's Settings
-3. Navigate to "Pages" in the left sidebar
-4. Under "Source", select "Deploy from a branch"
-5. Select the branch (usually `main` or `master`)
-6. Select the `/docs` folder
-7. Click "Save"
+- **Bug reports**: macOS version, app version (shown in the top bar), steps to reproduce, and what you expected vs. what happened. Attach a sample `.gpx` file if relevant.
+- **Feature requests**: describe the workflow you're trying to achieve and why the current app doesn't cover it.
 
-Your site will be available at: `https://yourusername.github.io/repositoryname/`
+For private matters (billing, account questions) email [jamespaulmoriarty@proton.me](mailto:jamespaulmoriarty@proton.me).
 
-### Method 2: Using GitHub CLI
+## Files
 
-```bash
-# Initialize git repository (if not already done)
-git init
-git add .
-git commit -m "Add support website"
+| File | Purpose |
+|---|---|
+| `index.html` | Main support page |
+| `styles.css` | Stylesheet |
+| `screenshot.png` | Hero screenshot shown on the page |
+| `icon.png` | App icon used in the top bar |
+| `privacy.txt` | Privacy policy |
 
-# Create GitHub repository and push
-gh repo create magic-gpx-editor --public --source=. --push
-```
-
-Then follow the web interface steps above to enable GitHub Pages.
-
-## 📝 Customizing
-
-### Update Links
-
-Before deploying, update the GitHub links in `index.html`:
-
-- Replace `yourusername` with your GitHub username
-- Replace `magic-gpx-editor` with your repository name
-
-Find these lines in `index.html`:
-```html
-<a href="https://github.com/yourusername/magic-gpx-editor/issues" class="button">Report an Issue</a>
-<a href="https://github.com/yourusername/magic-gpx-editor" class="button secondary">View on GitHub</a>
-```
-
-### Styling
-
-The website uses a modern, Apple-inspired design with:
-- Gradient header (blue to purple)
-- Card-based layout
-- Responsive design for mobile devices
-- Smooth animations and transitions
-
-Modify `styles.css` to change colors, fonts, or layout.
-
-## 🎨 Design Features
-
-- ✨ Modern gradient design
-- 📱 Fully responsive (mobile, tablet, desktop)
-- ♿ Accessible markup
-- 🎯 SEO optimized
-- ⚡ Fast loading (no external dependencies)
-
-## 📂 File Structure
-
-```
-docs/
-├── index.html      # Main support page
-├── styles.css      # Stylesheet
-└── README.md       # This file
-```
-
-## 🔧 Local Development
-
-To test locally, simply open `index.html` in a web browser, or use a local server:
+## Local development
 
 ```bash
-# Using Python 3
 cd docs
 python3 -m http.server 8000
-
-# Using Python 2
-python -m SimpleHTTPServer 8000
-
-# Using Node.js
-npx http-server
+# Open http://localhost:8000
 ```
 
-Then visit `http://localhost:8000` in your browser.
+## Deploying
 
-## 📄 License
-
-This website template is part of Magic GPX Editor.
+The site deploys automatically via GitHub Pages from the `/docs` folder on the `main` branch. Push to `main` and changes are live within a minute.
